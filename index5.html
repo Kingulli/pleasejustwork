@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sculpting Realities–Ghost-VR</title>
+    <title>Sculpting Realities–Ghost-Desktop</title>
     <meta name="description" content="Sculpting Realities project 2">
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script> 
@@ -59,9 +59,8 @@
       </a-assets>
 
 
-<a-entity id="tryitall"
-  position="0 -8 -4">
 
+        
         <a-entity id="Room">
 
             <a-circle id="persian rug" 
@@ -354,21 +353,15 @@
 
         </a-entity>
 
-</a-entity>
 
 
-<!-- 
-<a-entity id="cameraRig" position="0 9 4">
-  <a-entity id="head" camera position="0 9 4" look-controls wasd-controls="#cameraRig;"></a-entity>
-  <a-entity teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
-  <a-entity teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
-</entity>
 
- -->
-
-<a-entity camera look-controls position="0 9 4">
-        <a-entity id="camera">
+        <a-entity id="camera" 
+          rotation="0 0 0" 
+          position="0 0 0">
+          
             <a-camera 
+              position="0 9 4"
               wasd-controls="acceleration: 200"> 
               <a-cursor 
                 cursor="fuse: true">
@@ -385,7 +378,7 @@
             </a-camera>
 
         </a-entity> 
-</a-entity>
+
 
 
         <a-entity id="lights">
@@ -404,6 +397,8 @@
           </a-light>
 
         </a-entity>
+
+
 
 
 
