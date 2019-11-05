@@ -354,16 +354,16 @@
         </a-entity>
 
 
-
+<!-- 
 <a-entity id="cameraRig" position="0 9 4">
   <a-entity id="head" camera position="0 9 4" look-controls wasd-controls="#cameraRig;"></a-entity>
   <a-entity teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
   <a-entity teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
 </entity>
 
+ -->
 
-
-<!-- <a-entity id="cameraRig" position="0 9 4">
+<a-entity camera look-controls position="0 9 4">
         <a-entity id="camera" >
             <a-camera 
               wasd-controls="acceleration: 200"> 
@@ -382,7 +382,7 @@
             </a-camera>
 
         </a-entity> 
-</a-entity> -->
+</a-entity>
 
 
         <a-entity id="lights">
